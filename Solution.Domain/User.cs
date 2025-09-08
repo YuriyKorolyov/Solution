@@ -15,7 +15,6 @@ public class User
     public decimal AccountBalance { get; set; }
     public int LoginCount { get; set; }
 
-
     public List<Order> Orders { get; set; } = new();
     public List<Customer> Customers { get; set; } = new();
 }
