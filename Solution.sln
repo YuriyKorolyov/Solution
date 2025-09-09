@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solution.Domain", "Solution.Domain\Solution.Domain.csproj", "{406A5ED1-37D9-46A3-89F5-EA4765BA218C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solution.Domain", "Solution.Domain\Solution.Domain.csproj", "{406A5ED1-37D9-46A3-89F5-EA4765BA218C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solution.Data", "Solution.Data\Solution.Data.csproj", "{FD19B22B-D205-4E11-BDC8-A82DB423A65D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solution.Data", "Solution.Data\Solution.Data.csproj", "{FD19B22B-D205-4E11-BDC8-A82DB423A65D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Solution.Benchmark", "Solution.Benchmark\Solution.Benchmark.csproj", "{3AE34CF4-AFA5-48A9-A8FC-BEF37D06A1AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solution.WebApi", "Solution.WebApi\Solution.WebApi.csproj", "{F9598E38-E3DF-4773-A06B-36DD82CF676B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{FD19B22B-D205-4E11-BDC8-A82DB423A65D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD19B22B-D205-4E11-BDC8-A82DB423A65D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD19B22B-D205-4E11-BDC8-A82DB423A65D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AE34CF4-AFA5-48A9-A8FC-BEF37D06A1AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AE34CF4-AFA5-48A9-A8FC-BEF37D06A1AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AE34CF4-AFA5-48A9-A8FC-BEF37D06A1AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AE34CF4-AFA5-48A9-A8FC-BEF37D06A1AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9598E38-E3DF-4773-A06B-36DD82CF676B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9598E38-E3DF-4773-A06B-36DD82CF676B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9598E38-E3DF-4773-A06B-36DD82CF676B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9598E38-E3DF-4773-A06B-36DD82CF676B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

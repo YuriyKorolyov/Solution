@@ -3,83 +3,77 @@
 public class Product
 {
     public int Id { get; set; }
-    public string Name { get; set; }
-    public string Description { get; set; }
-    public string ShortDescription { get; set; }
+    public string Name { get; set; } = "";
+    public string SKU { get; set; } = "";
+    public string Category { get; set; } = "";
+    public string SubCategory { get; set; } = "";
+    public string Vendor { get; set; } = "";
+    public string Manufacturer { get; set; } = "";
+    public string Brand { get; set; } = "";
+    public string Model { get; set; } = "";
+    public string Version { get; set; } = "";
+    public string LicenseKey { get; set; } = "";
 
     public decimal Price { get; set; }
-    public decimal? OldPrice { get; set; }
-    public decimal? SpecialPrice { get; set; }
-    public DateTime? SpecialPriceStartDate { get; set; }
-    public DateTime? SpecialPriceEndDate { get; set; }
+    public decimal Discount { get; set; }
+    public decimal TaxAmount { get; set; }
     public decimal CostPrice { get; set; }
-    public decimal Margin { get; set; }
-    public decimal TaxRate { get; set; }
-    public decimal Weight { get; set; }
-    public decimal Length { get; set; }
-    public decimal Width { get; set; }
-    public decimal Height { get; set; }
+    public decimal WholesalePrice { get; set; }
 
-    public string Category { get; set; }
-    public string Subcategory { get; set; }
-    public string Brand { get; set; }
-    public string Manufacturer { get; set; }
-    public string Supplier { get; set; }
-    public string ProductType { get; set; }
-    public string Tags { get; set; }
-    public string Color { get; set; }
-    public string Size { get; set; }
-    public string Material { get; set; }
+    public int Stock { get; set; }
+    public bool IsAvailable { get; set; }
+    public bool IsPreOrder { get; set; }
+    public int MinOrderQuantity { get; set; }
+    public int MaxOrderQuantity { get; set; }
 
-    public int StockQuantity { get; set; }
-    public int MinStockQuantity { get; set; }
-    public int LowStockActivity { get; set; }
-    public bool ManageStock { get; set; }
-    public bool StockAvailability { get; set; }
-    public int BackorderLimit { get; set; }
-    public bool AllowBackorders { get; set; }
-    public string WarehouseLocation { get; set; }
-    public string ShelfNumber { get; set; }
+    public DateTime CreatedAt { get; set; }
+    public DateTime UpdatedAt { get; set; }
+    public DateTime ReleaseDate { get; set; }
+    public DateTime ExpirationDate { get; set; }
 
-    public string Processor { get; set; }
-    public string RAM { get; set; }
-    public string Storage { get; set; }
-    public string Display { get; set; }
-    public string Graphics { get; set; }
-    public string OperatingSystem { get; set; }
-    public string BatteryLife { get; set; }
-    public string Connectivity { get; set; }
-    public string Ports { get; set; }
-    public string Camera { get; set; }
-    public string Sensors { get; set; }
+    public string Description { get; set; } = "";
+    public string ShortDescription { get; set; } = "";
+    public string Features { get; set; } = "";
+    public string Instructions { get; set; } = "";
+    public string WarrantyInfo { get; set; } = "";
+    public string Notes { get; set; } = "";
 
-    public string MainImageUrl { get; set; }
-    public string AdditionalImages { get; set; }
-    public string VideoUrl { get; set; }
-    public string DocumentationUrl { get; set; }
+    public double WeightKg { get; set; }
+    public double WidthCm { get; set; }
+    public double HeightCm { get; set; }
+    public double DepthCm { get; set; }
+    public string Color { get; set; } = "";
 
-    public bool IsPublished { get; set; }
-    public bool IsFeatured { get; set; }
-    public bool IsNew { get; set; }
-    public bool IsOnSale { get; set; }
-    public bool IsDownloadable { get; set; }
-    public bool IsVirtual { get; set; }
-    public bool RequiresShipping { get; set; }
-    public bool IsGiftCard { get; set; }
-    public DateTime CreatedDate { get; set; }
-    public DateTime UpdatedDate { get; set; }
-    public DateTime? AvailableStartDate { get; set; }
-    public DateTime? AvailableEndDate { get; set; }
+    public string CPU { get; set; } = "";
+    public int RAM_GB { get; set; }
+    public int Storage_GB { get; set; }
+    public string GPU { get; set; } = "";
+    public string OS { get; set; } = "";
+    public string Connectivity { get; set; } = "";
+    public string Ports { get; set; } = "";
+    public string SoftwareIncluded { get; set; } = "";
 
-    public double Rating { get; set; }
+    public string LicenseType { get; set; } = "";
+    public int LicenseDurationMonths { get; set; }
+    public string Certification { get; set; } = "";
+    public bool IsOpenSource { get; set; }
+
+    public string Tags { get; set; } = "";
+    public int Rating { get; set; }
     public int ReviewCount { get; set; }
-    public int ViewCount { get; set; }
-    public int SoldCount { get; set; }
+    public int Views { get; set; }
+    public int SalesCount { get; set; }
 
-    public string MetaTitle { get; set; }
-    public string MetaDescription { get; set; }
-    public string MetaKeywords { get; set; }
-    public string UrlSlug { get; set; }
+    public double ShippingWeightKg { get; set; }
+    public string ShippingDimensions { get; set; } = "";
+    public string WarehouseLocation { get; set; } = "";
+    public bool FreeShipping { get; set; }
+    public int DeliveryDays { get; set; }
 
-    public List<OrderItem> OrderItems { get; set; } = new();
+    public bool Featured { get; set; }
+    public bool NewArrival { get; set; }
+    public bool BestSeller { get; set; }
+    public string ReturnPolicy { get; set; } = "";
+    public string SupportContact { get; set; } = "";
+    public string DocumentationUrl { get; set; } = "";
 }
