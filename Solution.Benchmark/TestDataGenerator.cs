@@ -60,6 +60,16 @@ public static class TestDataGenerator
         return faker.Generate();
     }
 
+    public static List<UserDto> GenerateUsers(int count)
+    {
+        var users = new List<UserDto>();
+        for (int i = 0; i < count; i++)
+        {
+            users.Add(GenerateUser());
+        }
+        return users;
+    }
+
     public static List<OrderDto> GenerateOrders(int orderCount)
     {
         var faker = new Faker();
@@ -122,6 +132,8 @@ public static class TestDataGenerator
             var user = faker.PickRandom(users);
             var customer = faker.PickRandom(customers);
 
+            int currentOrderId = orderId;
+
             int itemsCount = faker.Random.Int(1, 5);
             var items = new List<OrderItemDto>();
 
@@ -131,6 +143,7 @@ public static class TestDataGenerator
                 items.Add(new OrderItemDto
                 {
                     Id = orderItemId++,
+                    OrderId = currentOrderId,
                     ProductId = product.Id,
                     Product = product,
                     Quantity = faker.Random.Int(1, 3),
