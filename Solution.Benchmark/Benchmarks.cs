@@ -38,7 +38,7 @@ public class Benchmarks
         //TestData
         _productDto = TestDataGenerator.GenerateProduct();
         _userDto = TestDataGenerator.GenerateUser();
-        _orderDtos = TestDataGenerator.GenerateOrders(20);
+        _orderDtos = TestDataGenerator.GenerateOrders(1);
     }
 
     [Benchmark]
